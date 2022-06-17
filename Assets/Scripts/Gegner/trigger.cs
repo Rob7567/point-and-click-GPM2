@@ -5,20 +5,37 @@ using UnityEngine;
 public class trigger : MonoBehaviour
 {
 
-
+    //public bool inRange;
     public static bool canMove;
+    //public Transform[] player;
+
+    
     // Start is called before the first frame update
     void Start()
     {
+        //inRange = false;
         canMove = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+       
+        
+        /*if (Vector2.Distance(transform.position, player[1].position) < 10.2f )
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                canMove = true;
+            }
+
+        }
+        */
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             canMove = true;
         }
+
     }
+    
 }

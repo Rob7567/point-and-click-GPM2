@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class patrol3 : MonoBehaviour
 {
+   
+    public GameObject ziel;
 
     public int counter;
     public Transform[] moveSpots;
@@ -19,7 +21,7 @@ public class patrol3 : MonoBehaviour
     {
         if (trigger.canMove == true )
         {
-            transform.position = Vector2.MoveTowards(transform.position, moveSpots[2].position, speed * Time.deltaTime);
+            transform.position = ziel.transform.position;
         }
     }
 }
