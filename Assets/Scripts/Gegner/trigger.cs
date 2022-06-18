@@ -7,7 +7,7 @@ public class trigger : MonoBehaviour
 
     //public bool inRange;
     public static bool canMove;
-    //public Transform[] player;
+    public Transform[] player;
 
     
     // Start is called before the first frame update
@@ -22,20 +22,20 @@ public class trigger : MonoBehaviour
     {
        
         
-        /*if (Vector2.Distance(transform.position, player[1].position) < 10.2f )
+        if (Vector2.Distance(transform.position, player[1].position) < 1.8f )
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.Q))
             {
                 canMove = true;
             }
 
         }
-        */
-        if (Input.GetKeyDown(KeyCode.Q))
+        
+        /*if (Input.GetKeyDown(KeyCode.Q))
         {
             canMove = true;
         }
-
+        */
     }
     
 }

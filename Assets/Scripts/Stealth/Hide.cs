@@ -18,6 +18,10 @@ namespace Pathfinding
 
         public AIPath move;
 
+        // Hab hier was hinzugefügt LG Rob
+        public bool gameOver = false;
+        public bool found = false;
+
         /*
         private void OnTriggerStay2D(Collider2D other)
         {
@@ -52,8 +56,14 @@ namespace Pathfinding
             {
                 UnHide();
             }
-
-
+           
+            // Hab hier was hinzugefügt LG Rob
+            if (isHiding == false && found == true)
+            {
+               
+                    gameOver = true;
+                
+            }
 
         }
 
@@ -116,6 +126,12 @@ namespace Pathfinding
             {
                 box = other.gameObject.transform;
             }
+            // Hab hier was hinzugefügt LG Rob
+            if (other.gameObject.layer == LayerMask.NameToLayer("sichtkegel"))
+            {
+
+                found = true;
+            }
         }
 
         private void OnTriggerExit2D(Collider2D other)
@@ -125,6 +141,9 @@ namespace Pathfinding
                 box = null;
             }
         }
+
+        
+        
     }
 
 }
