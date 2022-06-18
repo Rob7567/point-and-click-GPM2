@@ -69,7 +69,7 @@ namespace Pathfinding
 
         public void HideinBox()
         {
-            if (dist <= 1.8f && dist > 0)
+            if (dist <= 3.0f && dist > 0)
             {
                 if (isHiding == false)
                 {

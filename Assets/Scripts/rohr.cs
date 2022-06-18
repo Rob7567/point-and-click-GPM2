@@ -7,6 +7,9 @@ public class rohr : MonoBehaviour
     public static bool onSteam;
 
     public GameObject steam;
+
+    public GameObject player;
+    public float dist;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +19,13 @@ public class rohr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       /* if (Input.GetKeyDown(KeyCode.Q))
-        {
-            steam.SetActive(false);
-        }*/
-        
+        /* if (Input.GetKeyDown(KeyCode.Q))
+         {
+             steam.SetActive(false);
+         }*/
+
+        dist = Vector3.Distance(player.transform.position, transform.position);
+
     }
     void OnMouseOver()
     {
@@ -31,4 +36,16 @@ public class rohr : MonoBehaviour
     {
         onSteam = false;
     }
+
+    public void OnMouseDown()
+    {
+        if(SC_ItemCrafting.rätselBool == true)
+        {
+            if(dist <= 5.0f)
+            {
+                steam.SetActive(false);
+            }
+        }
+    }
+
 }
