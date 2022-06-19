@@ -12,6 +12,12 @@ public class Pickup : MonoBehaviour
 
     public float dist;
 
+    public static bool schraubenzieherAufgenommen = false;
+
+    public Color color;
+    public Color highlightColor;
+    public SpriteRenderer spriteRenderer;
+
     private void Update()
     {
         dist = Vector3.Distance(player.transform.position, transform.position);
@@ -19,7 +25,7 @@ public class Pickup : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (dist <= 3.2f)
+        if (dist <= 3.6f)
         {
             itemCrafting.currentSprite = sprite;
 
@@ -28,6 +34,20 @@ public class Pickup : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (CompareTag("Schraubenzieher") && dist <= 3.6f)
+        {
+            schraubenzieherAufgenommen = true;
+        }
         
+    }
+
+    private void OnMouseOver()
+    {
+        spriteRenderer.color = highlightColor;
+    }
+
+    private void OnMouseExit()
+    {
+        spriteRenderer.color = color;
     }
 }

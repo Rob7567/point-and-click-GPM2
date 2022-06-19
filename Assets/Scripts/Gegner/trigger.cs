@@ -8,7 +8,10 @@ public class trigger : MonoBehaviour
     //public bool inRange;
     public static bool canMove;
     public Transform[] player;
+    public SpriteRenderer spriteRenderer;
 
+    public Color color;
+    public Color highlightColor;
     
     // Start is called before the first frame update
     void Start()
@@ -20,8 +23,8 @@ public class trigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        
+
+        /*
         if (Vector2.Distance(transform.position, player[1].position) < 1.8f )
         {
             if (Input.GetKey(KeyCode.Q))
@@ -30,12 +33,35 @@ public class trigger : MonoBehaviour
             }
 
         }
-        
+        */
+
         /*if (Input.GetKeyDown(KeyCode.Q))
         {
             canMove = true;
         }
         */
+
     }
-    
+
+    private void OnMouseDown()
+    {
+        if (Vector2.Distance(transform.position, player[1].position) < 1.8f)
+        {
+            if(Pickup.schraubenzieherAufgenommen == true)
+            {
+                canMove = true;
+            }
+        }
+    }
+
+    private void OnMouseOver()
+    {
+        spriteRenderer.color = highlightColor;
+    }
+
+    private void OnMouseExit()
+    {
+        spriteRenderer.color = color;
+    }
+
 }

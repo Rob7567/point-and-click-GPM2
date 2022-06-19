@@ -7,17 +7,15 @@ public class doorTrigger : MonoBehaviour
 
     public GameObject trigger;
     public GameObject player;
+    public GameObject enemy;
 
     public Animator animator;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
+
+        //Player
         if (Vector2.Distance(player.transform.position, trigger.transform.position) < 2.2f)
         {
             animator.SetBool("openDoor",true);
@@ -35,5 +33,17 @@ public class doorTrigger : MonoBehaviour
         {
             animator.SetBool("closeDoor", false);
         }
+
+        //Enemy
+        if (Vector2.Distance(enemy.transform.position, trigger.transform.position) < 2.2f)
+        {
+            animator.SetBool("openDoor", true);
+        }
+        
+        if (Vector2.Distance(enemy.transform.position, trigger.transform.position) > 2.2f)
+        {
+            animator.SetBool("closeDoor", true);
+        }
+        
     }
 }

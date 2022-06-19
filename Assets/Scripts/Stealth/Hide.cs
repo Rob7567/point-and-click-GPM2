@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Pathfinding
 {
@@ -60,8 +61,10 @@ namespace Pathfinding
             // Hab hier was hinzugefügt LG Rob
             if (isHiding == false && found == true)
             {
-               
-                    gameOver = true;
+
+                //gameOver = true;
+
+                SceneManager.LoadScene("GameOver");
                 
             }
 
