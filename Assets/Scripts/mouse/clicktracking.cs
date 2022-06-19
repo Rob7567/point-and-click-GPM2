@@ -8,7 +8,9 @@ public class clicktracking : MonoBehaviour
     public GameObject cursor;
     public BoxCollider2D steam;
     public bool onSteam;
-    
+
+    public Animator animator;
+    public GameObject player;
    
 
 
@@ -29,8 +31,16 @@ public class clicktracking : MonoBehaviour
                 cursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             }
         }
-       
-        
+        /*if (Vector2.Distance(transform.position, player.transform.position) < 0.5f)
+        {
+            animator.SetBool("walking", false);
+        }
+        else
+        {
+            animator.SetBool("walking", true);
+        }*/
+
+
     }
     /*private void OnTriggerEnter2D(Collider2D other)
     {

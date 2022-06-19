@@ -16,7 +16,7 @@ public class rohr : MonoBehaviour
         onSteam = false;
     }
 
-    // Update is called once per frame
+    // Update is called once per framea
     void Update()
     {
         /* if (Input.GetKeyDown(KeyCode.Q))
