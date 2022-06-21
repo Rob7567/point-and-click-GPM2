@@ -18,6 +18,8 @@ public class Pickup : MonoBehaviour
     public Color highlightColor;
     public SpriteRenderer spriteRenderer;
 
+    public AudioSource audio;
+
     private void Update()
     {
         dist = Vector3.Distance(player.transform.position, transform.position);
@@ -32,6 +34,7 @@ public class Pickup : MonoBehaviour
             itemCrafting.PickupItem();
 
             Destroy(gameObject);
+            audio.Play();
         }
 
         if (CompareTag("Schraubenzieher") && dist <= 3.6f)
