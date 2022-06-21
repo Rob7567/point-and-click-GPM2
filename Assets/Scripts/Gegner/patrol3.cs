@@ -10,6 +10,7 @@ public class patrol3 : MonoBehaviour
     public int counter;
     public Transform[] moveSpots;
     public float speed;
+    public GameObject enemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,22 @@ public class patrol3 : MonoBehaviour
     {
         if (trigger.canMove == true )
         {
-            transform.position = ziel.transform.position;
+            if (counter != moveSpots.Length)
+            {
+                transform.position = moveSpots[counter].position;
+                if (Vector2.Distance(transform.position, enemy.transform.position) < 0.2f)
+                {
+
+
+                    counter++;
+
+
+
+                }
+                
+            }
+            
+            
         }
     }
 }
