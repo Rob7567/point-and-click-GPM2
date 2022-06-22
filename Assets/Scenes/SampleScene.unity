@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 34827112}
   - component: {fileID: 34827113}
   m_Layer: 0
-  m_Name: Gegner_V2_Variante_1_Screenshot
+  m_Name: gegner1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -372,7 +372,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 5
+  maxSpeed: 6
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -1780,6 +1780,7 @@ MonoBehaviour:
   - {fileID: 1882398763}
   speed: 10
   enemy: {fileID: 990227246}
+  animator: {fileID: 990227253}
 --- !u!4 &306722180
 Transform:
   m_ObjectHideFlags: 0
@@ -2580,7 +2581,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 5
+  maxSpeed: 6
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -2816,7 +2817,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.62175184, y: -1.4623537}
+  m_Offset: {x: 0.62175184, y: -1.2545187}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2827,7 +2828,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1985906, y: 1.6689754}
+  m_Size: {x: 1.1985906, y: 1.2533054}
   m_EdgeRadius: 0
 --- !u!212 &615355441
 SpriteRenderer:
@@ -4161,7 +4162,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817690499}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4239,7 +4240,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817690499}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -4868,8 +4869,10 @@ GameObject:
   - component: {fileID: 990227252}
   - component: {fileID: 990227251}
   - component: {fileID: 990227250}
+  - component: {fileID: 990227253}
+  - component: {fileID: 990227254}
   m_Layer: 0
-  m_Name: Gegner_V2_Variante_1_Screenshot (1)
+  m_Name: gegner2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4991,7 +4994,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 6
+  maxSpeed: 8
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -5045,6 +5048,46 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!95 &990227253
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990227246}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 14969be7f50679f4194a16f3d88bbded, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &990227254
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990227246}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1000349000
 GameObject:
   m_ObjectHideFlags: 0
@@ -6740,7 +6783,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 6
+  maxSpeed: 8
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -8363,6 +8406,7 @@ GameObject:
   - component: {fileID: 1946067140}
   - component: {fileID: 1946067141}
   - component: {fileID: 1946067138}
+  - component: {fileID: 1946067142}
   m_Layer: 12
   m_Name: GameMaster
   m_TagString: Untagged
@@ -8459,6 +8503,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.873104, y: 7.0580654}
   m_EdgeRadius: 0
+--- !u!114 &1946067142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946067137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e4bfc4cf7494a4cbe330e6a54223f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 990227254}
+  animator: {fileID: 990227253}
+  playerAudio: {fileID: 34827113}
+  player: {fileID: 990227246}
+  bIsOnTheMove: 0
 --- !u!1 &2011837185
 GameObject:
   m_ObjectHideFlags: 0

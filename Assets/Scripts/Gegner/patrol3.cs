@@ -11,6 +11,7 @@ public class patrol3 : MonoBehaviour
     public Transform[] moveSpots;
     public float speed;
     public GameObject enemy;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +25,14 @@ public class patrol3 : MonoBehaviour
         {
             if (counter != moveSpots.Length)
             {
+               // animator.SetBool("walking", true);
+
+
                 transform.position = moveSpots[counter].position;
                 if (Vector2.Distance(transform.position, enemy.transform.position) < 0.2f)
                 {
 
-
+                    
                     counter++;
 
 
@@ -36,7 +40,13 @@ public class patrol3 : MonoBehaviour
                 }
 
             }
+           /* else
+            {
+                animator.SetBool("walking", false);
 
+
+            }
+           */
 
         }
     }
