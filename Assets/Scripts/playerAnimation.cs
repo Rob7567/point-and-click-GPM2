@@ -6,6 +6,7 @@ public class playerAnimation : MonoBehaviour
 {
     public Rigidbody2D rigidbody;
     public Animator animator;
+    public AudioSource playerAudio;
    
     public GameObject player;
      
@@ -26,13 +27,25 @@ public class playerAnimation : MonoBehaviour
         if (bIsOnTheMove == true)
         {
             animator.SetBool("walking", true);
+            
         }
         else
         {
             animator.SetBool("walking", false);
+            
         }
-       
-        StartCoroutine(CheckMoving());
+
+        if (bIsOnTheMove == true && !playerAudio.isPlaying)
+        {
+            playerAudio.Play();
+        }
+        else if(bIsOnTheMove == false)
+        {
+            playerAudio.Pause();
+        }
+
+
+            StartCoroutine(CheckMoving());
     }
     
      public bool bIsOnTheMove = false;

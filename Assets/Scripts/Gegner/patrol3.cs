@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class patrol3 : MonoBehaviour
 {
-   
+
     public GameObject ziel;
 
     public int counter;
@@ -14,13 +14,13 @@ public class patrol3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (trigger.canMove == true )
+        if (trigger.canMove == true)
         {
             if (counter != moveSpots.Length)
             {
@@ -34,10 +34,10 @@ public class patrol3 : MonoBehaviour
 
 
                 }
-                
+
             }
-            
-            
+
+
         }
     }
 }

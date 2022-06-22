@@ -11,20 +11,23 @@ public class doorTrigger : MonoBehaviour
 
     public Animator animator;
 
+    public AudioSource audioTürauf;
+    public AudioSource audioTürzu;
+
     // Update is called once per frame
     void Update()
     {
 
-        //Player
+
         if (Vector2.Distance(player.transform.position, trigger.transform.position) < 2.2f || Vector2.Distance(enemy.transform.position, trigger.transform.position) < 2.2f)
         {
-            animator.SetBool("openDoor",true);
+            animator.SetBool("openDoor", true);
         }
         else
         {
             animator.SetBool("openDoor", false);
         }
-       
+
         if (Vector2.Distance(player.transform.position, trigger.transform.position) > 2.2f && Vector2.Distance(enemy.transform.position, trigger.transform.position) > 2.2f)
         {
             animator.SetBool("closeDoor", true);
@@ -45,6 +48,8 @@ public class doorTrigger : MonoBehaviour
         {
             animator.SetBool("closeDoor", true);
         }*/
+
         
+
     }
 }

@@ -9,6 +9,7 @@ public class trigger : MonoBehaviour
     public static bool canMove;
     public Transform[] player;
     public SpriteRenderer spriteRenderer;
+    public AudioSource audio;
 
     public Color color;
     public Color highlightColor;
@@ -45,11 +46,12 @@ public class trigger : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Vector2.Distance(transform.position, player[1].position) < 1.8f)
+        if (Vector2.Distance(transform.position, player[1].position) < 2.8f)
         {
             if(Pickup.schraubenzieherAufgenommen == true)
             {
                 canMove = true;
+                audio.Play();
             }
         }
     }
