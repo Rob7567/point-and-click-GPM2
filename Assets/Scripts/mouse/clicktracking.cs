@@ -29,7 +29,15 @@ public class clicktracking : MonoBehaviour
             if (Input.GetMouseButton(1))
             {
                 cursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
             }
+
+            if (Input.GetMouseButtonDown(1))
+            {
+                
+                animator.SetBool("click", true);
+            }
+            
         }
         /*if (Vector2.Distance(transform.position, player.transform.position) < 0.5f)
         {

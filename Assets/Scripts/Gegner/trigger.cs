@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class trigger : MonoBehaviour
+public class Trigger : MonoBehaviour
 {
 
     //public bool inRange;
     public static bool canMove;
-    public Transform[] player;
+    //public Transform[] player;
     public SpriteRenderer spriteRenderer;
     public AudioSource audio;
+
+    public Transform player2;
 
     public Color color;
     public Color highlightColor;
@@ -41,12 +43,15 @@ public class trigger : MonoBehaviour
             canMove = true;
         }
         */
-
+        //print(Vector2.Distance(transform.position, player2.position));
     }
+
+
 
     private void OnMouseDown()
     {
-        if (Vector2.Distance(transform.position, player[1].position) < 2.8f)
+        Debug.Log("Down");
+        if (Vector2.Distance(transform.position, player2.position) < 2.8f)
         {
             if(Pickup.schraubenzieherAufgenommen == true)
             {
@@ -58,11 +63,13 @@ public class trigger : MonoBehaviour
 
     private void OnMouseOver()
     {
+        Debug.Log("Over");
         spriteRenderer.color = highlightColor;
     }
 
     private void OnMouseExit()
     {
+        Debug.Log("Exit");
         spriteRenderer.color = color;
     }
 

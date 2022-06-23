@@ -26,7 +26,7 @@ public class patrol2 : MonoBehaviour
         }
        
 
-        if (trigger.canMove == true && counter < moveSpots.Length)
+        if (Trigger.canMove == true && counter < moveSpots.Length)
         {
             transform.position = Vector2.MoveTowards(transform.position, moveSpots[counter].position, speed * Time.deltaTime);
         }

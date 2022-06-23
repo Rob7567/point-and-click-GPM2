@@ -21,7 +21,7 @@ public class patrol3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (trigger.canMove == true)
+        if (Trigger.canMove == true)
         {
             if (counter != moveSpots.Length)
             {
