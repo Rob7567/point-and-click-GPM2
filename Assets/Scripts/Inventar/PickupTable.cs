@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickup : MonoBehaviour
+public class PickupTable : MonoBehaviour
 {
-    public SC_ItemCrafting itemCrafting; 
+    public SC_ItemCrafting itemCrafting;
 
     public Sprite sprite;
 
@@ -12,11 +12,19 @@ public class Pickup : MonoBehaviour
 
     public float dist;
 
-    public static bool schraubenzieherAufgenommen = false;
+    public GameObject table1;
+    public GameObject table2;
+    public GameObject table3;
+    public GameObject table4;
 
+    public GameObject body;
+
+
+    /*
     public Color color;
     public Color highlightColor;
     public SpriteRenderer spriteRenderer;
+    */
 
     public AudioSource audio;
 
@@ -27,23 +35,33 @@ public class Pickup : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (dist <= 3.6f)
+        if (dist <= 4.6f)
         {
             itemCrafting.currentSprite = sprite;
 
             itemCrafting.PickupItem();
 
-            Destroy(gameObject);
+            table1.SetActive(false);
+            table2.SetActive(false);
+            table3.SetActive(true);
+            table4.SetActive(true);
+
             audio.Play();
+            Destroy(this.gameObject);
+
+            if(body != null)
+            {
+                body.SetActive(true);
+            }
+            
         }
 
-        if (CompareTag("Schraubenzieher") && dist <= 3.6f)
-        {
-            schraubenzieherAufgenommen = true;
-        }
+        
 
     }
 
+
+    /*
     private void OnMouseOver()
     {
         spriteRenderer.color = highlightColor;
@@ -52,5 +70,5 @@ public class Pickup : MonoBehaviour
     private void OnMouseExit()
     {
         spriteRenderer.color = color;
-    }
+    }*/
 }
