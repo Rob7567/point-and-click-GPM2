@@ -123,142 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &3744250
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3744251}
-  - component: {fileID: 3744252}
-  - component: {fileID: 3744253}
-  m_Layer: 9
-  m_Name: wallcolider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3744251
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3744250}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 670256973}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &3744252
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3744250}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -11.535782, y: 2.7726135}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 9.78706, y: 2.5083015}
-  m_EdgeRadius: 0
---- !u!60 &3744253
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3744250}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 17.248875, y: 1.9650316}
-      - {x: 17.990904, y: 1.2465671}
-      - {x: 18.0348, y: -0.56372654}
-      - {x: 17.208513, y: -1.3716679}
-      - {x: 8.716785, y: -1.3096863}
-      - {x: 8.21758, y: -0.9154847}
-      - {x: -1.7704289, y: -0.90486825}
-      - {x: -9.095544, y: -8.364321}
-      - {x: -21.456478, y: -8.324374}
-      - {x: -21.713163, y: -7.2824006}
-      - {x: -21.738234, y: -5.539323}
-      - {x: -19.694735, y: -5.453813}
-      - {x: -19.684174, y: -0.12701476}
-      - {x: -21.811367, y: -0.09505409}
-      - {x: -21.781635, y: 1.2733667}
-      - {x: -22.87659, y: 1.4441015}
-      - {x: -22.808542, y: -12.697865}
-      - {x: 22.69079, y: -12.51171}
-      - {x: 22.535885, y: 12.406557}
-      - {x: 9.448904, y: 12.741941}
-      - {x: -22.827887, y: 12.790457}
-      - {x: -22.602901, y: 2.115619}
-      - {x: -21.83773, y: 1.4717671}
-      - {x: -18.635328, y: 1.4714053}
-      - {x: -18.649113, y: 3.783174}
-      - {x: -21.711594, y: 3.7340758}
-      - {x: -22.283386, y: 4.658195}
-      - {x: -22.277235, y: 7.9944425}
-      - {x: -21.601978, y: 8.389865}
-      - {x: -18.513123, y: 8.447686}
-      - {x: -18.499279, y: 7.3601613}
-      - {x: -16.968573, y: 7.288443}
-      - {x: -13.258063, y: 7.114595}
-      - {x: -13.218306, y: 8.9425745}
-      - {x: -8.816263, y: 8.908372}
-      - {x: -5.038891, y: 5.934187}
-      - {x: -6.606295, y: 3.4283428}
-      - {x: -13.246647, y: 3.4323895}
-      - {x: -13.247276, y: 4.1799803}
-      - {x: -13.619938, y: 4.1678805}
-      - {x: -13.642584, y: 3.4326308}
-      - {x: -16.386864, y: 3.4343033}
-      - {x: -16.411152, y: 1.4180627}
-      - {x: -6.686263, y: 1.3671994}
-      - {x: -3.9057639, y: 2.5884004}
-      - {x: -1.6857241, y: 1.8416716}
-      - {x: 8.431571, y: 1.9491473}
-      - {x: 10.02761, y: 2.6611638}
-      - {x: 10.971501, y: 2.6682343}
-      - {x: 10.9169855, y: 1.7440051}
-      - {x: 13.575334, y: 1.7481424}
-      - {x: 13.637755, y: 2.438098}
-      - {x: 17.243631, y: 2.4322553}
 --- !u!1 &43715017
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +678,7 @@ MonoBehaviour:
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
     cacheStartup: 0
-  showNavGraphs: 1
+  showNavGraphs: 0
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -1428,7 +1292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569706617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.97, y: -3.7, z: 0}
+  m_LocalPosition: {x: -21.97, y: -3.7, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1818,7 +1682,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1289015928}
-  - {fileID: 3744251}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1876,7 +1739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725652329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.62, y: 8.05, z: 0}
+  m_LocalPosition: {x: -16.62, y: 8.05, z: -0.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1653008574}
@@ -3964,13 +3827,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -21.659258, y: 13.444824}
-      - {x: -21.724163, y: 6.1809554}
-      - {x: -20.586325, y: 4.5237613}
-      - {x: -8.709359, y: 4.4313383}
-      - {x: -5.9446907, y: 4.461045}
-      - {x: -3.8850613, y: 7.628495}
-      - {x: -6.1113873, y: 13.323834}
+    - - {x: 18.21198, y: 12.460987}
+      - {x: 5.1500883, y: 12.75712}
+      - {x: 4.633774, y: 3.7806268}
+      - {x: 11.45193, y: 4.0770125}
+      - {x: 17.571863, y: -1.751016}
+      - {x: 23.248096, y: -1.0706832}
+      - {x: 23.559032, y: 6.90301}
 --- !u!61 &1740071440
 BoxCollider2D:
   m_ObjectHideFlags: 0

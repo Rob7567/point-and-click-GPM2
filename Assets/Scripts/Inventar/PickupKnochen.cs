@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickup : MonoBehaviour
+public class PickupKnochen : MonoBehaviour
 {
-    public SC_ItemCrafting itemCrafting; 
+    public SC_ItemCrafting itemCrafting;
 
     public Sprite sprite;
 
     public GameObject player;
 
-    public float dist;
 
-    public static bool schraubenzieherAufgenommen = false;
+    public GameObject table1;
+    public GameObject table2;
+
+    public float dist;
 
     public Color color;
     public Color highlightColor;
@@ -33,14 +35,14 @@ public class Pickup : MonoBehaviour
 
             itemCrafting.PickupItem();
 
+            table1.SetActive(false);
+            table2.SetActive(true);
+
             Destroy(gameObject);
             audio.Play();
         }
 
-        if (CompareTag("Schraubenzieher") && dist <= 3.6f)
-        {
-            schraubenzieherAufgenommen = true;
-        }
+        
 
     }
 

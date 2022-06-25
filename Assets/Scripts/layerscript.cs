@@ -8,7 +8,26 @@ public class layerscript : MonoBehaviour
     public bool layer;
     public bool invlayer;
     public SpriteRenderer spriterenderer;
-    
+
+
+    private void Update()
+    {
+        if (layer == true)
+        {
+            if (invlayer == true)
+            {
+                spriterenderer.sortingOrder = -1;
+            }
+            else
+            spriterenderer.sortingOrder = 1;
+        }
+
+        if (layer == false)
+        {
+            spriterenderer.sortingOrder = 3;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("layertrigger"))
@@ -19,9 +38,8 @@ public class layerscript : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("invlayertrigger"))
         {
             invlayer = true;
-            spriterenderer.sortingOrder = -1;
-        }
 
+        }
     }
         private void OnTriggerExit2D(Collider2D other)
     {
@@ -33,26 +51,7 @@ public class layerscript : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("invlayertrigger"))
         {
             invlayer = false;
-            spriterenderer.sortingOrder = 1;
-        }
-    }
-    public void Update()
-    {
-        if (layer == true)
-        {
-            spriterenderer.sortingOrder = 1;
-        }
-        if (layer == false )
-        {
-            if (invlayer == true)
-            {
-                spriterenderer.sortingOrder = -1;
-            }
-            else
-            {
-                spriterenderer.sortingOrder = 3;
-            }
-            
+
         }
     }
 
