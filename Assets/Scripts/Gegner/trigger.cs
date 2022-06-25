@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
+
     //public bool inRange;
     public static bool canMove;
     //public Transform[] player;
@@ -14,7 +15,7 @@ public class Trigger : MonoBehaviour
 
     public Color color;
     public Color highlightColor;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +53,7 @@ public class Trigger : MonoBehaviour
         Debug.Log("Down");
         if (Vector2.Distance(transform.position, player2.transform.position) < 2.8f)
         {
-            if (Pickup.schraubenzieherAufgenommen == true)
+            if(Pickup.schraubenzieherAufgenommen == true)
             {
                 canMove = true;
                 audio.Play();
@@ -71,4 +72,5 @@ public class Trigger : MonoBehaviour
         Debug.Log("Exit");
         spriteRenderer.color = color;
     }
+
 }
