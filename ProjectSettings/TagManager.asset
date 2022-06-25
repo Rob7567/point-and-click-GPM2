@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ground
   - Schraubenzieher
+  - roboter
   layers:
   - Default
   - TransparentFX
