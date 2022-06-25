@@ -4720,7 +4720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  test: 0
+  layer: 0
+  invlayer: 0
   spriterenderer: {fileID: 817690500}
 --- !u!81 &817690511
 AudioListener:
@@ -7646,8 +7647,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1490715339}
   - component: {fileID: 1490715341}
-  - component: {fileID: 1490715338}
   - component: {fileID: 1490715340}
+  - component: {fileID: 1490715338}
   m_Layer: 0
   m_Name: alarm
   m_TagString: Untagged
@@ -7669,9 +7670,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1490715341}
   audio: {fileID: 510758293}
-  player2: {fileID: 817690501}
+  player2: {fileID: 817690499}
   color: {r: 0, g: 0, b: 0, a: 0}
-  highlightColor: {r: 0, g: 0, b: 0, a: 0.41960785}
+  highlightColor: {r: 0, g: 0, b: 0, a: 0.6745098}
 --- !u!4 &1490715339
 Transform:
   m_ObjectHideFlags: 0

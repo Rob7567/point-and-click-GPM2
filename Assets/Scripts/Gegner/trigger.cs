@@ -11,7 +11,7 @@ public class Trigger : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public AudioSource audio;
 
-    public Transform player2;
+    public GameObject player2;
 
     public Color color;
     public Color highlightColor;
@@ -51,7 +51,7 @@ public class Trigger : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Down");
-        if (Vector2.Distance(transform.position, player2.position) < 2.8f)
+        if (Vector2.Distance(transform.position, player2.transform.position) < 2.8f)
         {
             if(Pickup.schraubenzieherAufgenommen == true)
             {
