@@ -19,7 +19,7 @@ public class doorTrigger : MonoBehaviour
     {
 
 
-        if (Vector2.Distance(player.transform.position, trigger.transform.position) < 2.2f || Vector2.Distance(enemy.transform.position, trigger.transform.position) < 2.2f)
+        if (Vector2.Distance(player.transform.position, trigger.transform.position) < 2.2f || Vector2.Distance(enemy.transform.position, trigger.transform.position) < 3.2f)
         {
             animator.SetBool("openDoor", true);
         }
@@ -28,7 +28,7 @@ public class doorTrigger : MonoBehaviour
             animator.SetBool("openDoor", false);
         }
 
-        if (Vector2.Distance(player.transform.position, trigger.transform.position) > 2.2f && Vector2.Distance(enemy.transform.position, trigger.transform.position) > 2.2f)
+        if (Vector2.Distance(player.transform.position, trigger.transform.position) > 2.2f && Vector2.Distance(enemy.transform.position, trigger.transform.position) > 3.2f)
         {
             animator.SetBool("closeDoor", true);
         }

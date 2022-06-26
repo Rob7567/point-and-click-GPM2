@@ -48,6 +48,8 @@ public class SC_ItemCrafting : MonoBehaviour
 
     ColorBlock defaultButtonColors;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -398,6 +400,9 @@ public class SC_ItemCrafting : MonoBehaviour
     void Update()
     {
         RätselCheck();
+        RätselCheck2();
+        RätselCheck3();
+        
 
         //Slot UI follow mouse position
         if (selectedItemSlot != null)
@@ -428,10 +433,24 @@ public class SC_ItemCrafting : MonoBehaviour
         }
     }
 
+
+
     public Sprite currentSprite;
 
     public Sprite rätselSprite;
     public static bool rätselBool = false;
+
+    public Sprite rätselSprite2;
+    public static bool rätselBool2 = false;
+
+    public Sprite rätselSprite3;
+    public static bool rätselBool3 = false;
+
+    private void Awake()
+    {
+        rätselBool2 = false;
+        rätselBool3 = false;
+    }
 
     public void PickupItem()
     {
@@ -465,5 +484,33 @@ public class SC_ItemCrafting : MonoBehaviour
             }
         }
     }
+
+    public void RätselCheck2()
+    {
+        for (int i = 0; i < playerSlots.Length; i++)
+        {
+            if (playerSlots[i].itemSprite == rätselSprite2)
+            {
+                rätselBool2 = true;
+
+                break;
+            }
+        }
+    }
+
+    public void RätselCheck3()
+    {
+        for (int i = 0; i < playerSlots.Length; i++)
+        {
+            if (playerSlots[i].itemSprite == rätselSprite3)
+            {
+                rätselBool3 = true;
+
+                break;
+            }
+        }
+    }
+
+
 
 }

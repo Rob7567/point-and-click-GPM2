@@ -13,6 +13,8 @@ namespace Pathfinding
 
         public Transform box;
 
+        public Animator animator;
+
         public float dist;
         //public SpriteRenderer spriteRenderer;
         public Rigidbody2D rigidbody2D;
@@ -22,6 +24,21 @@ namespace Pathfinding
         // Hab hier was hinzugefügt LG Rob
         public bool gameOver = false;
         public bool found = false;
+
+        public AudioSource audio;
+        public GameObject music;
+
+        private void Start()
+        {
+            GameObject[] objs = GameObject.FindGameObjectsWithTag("music");
+
+            if (objs.Length > 1)
+            {
+                Destroy(music);
+            }
+            DontDestroyOnLoad(music);
+            
+        }
 
         /*
         private void OnTriggerStay2D(Collider2D other)
@@ -64,7 +81,7 @@ namespace Pathfinding
 
                 //gameOver = true;
 
-                SceneManager.LoadScene("GameOver");
+                StartCoroutine(DeathAnim());
                 
             }
 
@@ -145,8 +162,35 @@ namespace Pathfinding
             }
         }
 
-        
+        public float dauer;
+
+        IEnumerator DeathAnim()
+        {
+            animator.Play("death");
+            move.canMove = false;
+            if(audio.isPlaying == false)
+            {
+                audio.Play();
+            }
+            
+            yield return new WaitForSeconds(dauer);
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("SampleScene"))
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Environment2"))
+            {
+                SceneManager.LoadScene("GameOver2");
+            }
+
+
+        }
         
     }
+
+    
+
 
 }

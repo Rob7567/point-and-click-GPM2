@@ -10,6 +10,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene("Environment2");
+    }
+
     public void GameOver()
     {
         SceneManager.LoadScene("GameOver");

@@ -6,7 +6,7 @@ public class clicktracking : MonoBehaviour
 {
     
     public GameObject cursor;
-    public BoxCollider2D steam;
+    //public BoxCollider2D steamcol;
     public bool onSteam;
 
     public Animator animator;
@@ -24,7 +24,7 @@ public class clicktracking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rohr.onSteam == false)
+        if (steam.onSteam == false)
         {
             if (Input.GetMouseButton(1))
             {

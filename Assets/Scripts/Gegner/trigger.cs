@@ -6,6 +6,7 @@ public class Trigger : MonoBehaviour
 {
     //public bool inRange;
     public static bool canMove;
+    
     //public Transform[] player;
     public SpriteRenderer spriteRenderer;
     public AudioSource audio;

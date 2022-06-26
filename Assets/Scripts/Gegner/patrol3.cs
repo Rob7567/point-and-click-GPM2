@@ -25,7 +25,7 @@ public class patrol3 : MonoBehaviour
         {
             if (counter != moveSpots.Length)
             {
-               // animator.SetBool("walking", true);
+               //animator.SetBool("walking", true);
 
 
                 transform.position = moveSpots[counter].position;
@@ -40,13 +40,14 @@ public class patrol3 : MonoBehaviour
                 }
 
             }
-           /* else
+            /*
+            else
             {
                 animator.SetBool("walking", false);
 
 
-            }
-           */
+            }*/
+           
 
         }
     }

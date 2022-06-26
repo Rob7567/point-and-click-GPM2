@@ -8,6 +8,8 @@ public class enemyKitchenLook : MonoBehaviour
     public bool quit = false;
     public Transform[] moveSpots;
     public SpriteRenderer enemy;
+
+    public bool läuft;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +30,21 @@ public class enemyKitchenLook : MonoBehaviour
         }
         else enemy.flipX = true;
 
+        if(Pathfinding.Dialog3.dialogZeug == true)
+        {
+            StopAllCoroutines();
+            läuft = false;
+        }
+        else if(läuft == false)
+        {
+            StartCoroutine(waiter());
+        }
+
     }
 
-    IEnumerator waiter()
+    public IEnumerator waiter()
     {
+        läuft = true;
         while (quit == false)
         {
             yield return new WaitForSeconds(5);
