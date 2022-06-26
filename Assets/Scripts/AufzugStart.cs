@@ -11,7 +11,7 @@ public class AufzugStart : MonoBehaviour
     {
         if(Vector2.Distance(transform.position, player.transform.position) < 4.8f)
         {
-            if (Pathfinding.Dialog.dialogAusgeführt == true && Pickup.schraubenzieherAufgenommen == true)
+            if (Pathfinding.Dialog.dialogAusgeführt == true && Pickup.artifakt == true)
             {
                 SceneManager.LoadScene("SampleScene");
             }

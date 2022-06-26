@@ -6,6 +6,9 @@ TagManager:
   tags:
   - ground
   - Schraubenzieher
+  - roboter
+  - Artifakt
+  - music
   layers:
   - Default
   - TransparentFX

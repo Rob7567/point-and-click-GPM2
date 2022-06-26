@@ -13,6 +13,7 @@ public class Pickup : MonoBehaviour
     public float dist;
 
     public static bool schraubenzieherAufgenommen = false;
+    public static bool artifakt = false;
 
     public Color color;
     public Color highlightColor;
@@ -35,11 +36,18 @@ public class Pickup : MonoBehaviour
 
             Destroy(gameObject);
             audio.Play();
+
+            
         }
 
         if (CompareTag("Schraubenzieher") && dist <= 3.6f)
         {
             schraubenzieherAufgenommen = true;
+        }
+
+        if (CompareTag("Artifakt") && dist <= 3.6f)
+        {
+            artifakt = true;
         }
 
     }
