@@ -89,15 +89,13 @@ namespace Pathfinding
 
         public void HideinBox()
         {
-            if (dist <= 3.0f && dist > 0)
+            if (dist <= 3.5f && dist > 0)
             {
                 if (isHiding == false)
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         //Debug.Log("es funktioniert!!!!11elf");
-
-                        rigidbody2D.constraints = RigidbodyConstraints2D.FreezePosition;
 
                         move.canMove = false;
 
