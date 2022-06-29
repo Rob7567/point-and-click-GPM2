@@ -3946,7 +3946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 961867987}
   lines:
-  - "Kapit\xE4n! Wir haben ein gro\xDFes Problem. Wir wurden gekentert. "
+  - "Kapit\xE4n! Wir haben ein gro\xDFes Problem. Wir wurden geentert. "
   - 'Vermutlich stecken die Nightmare Raiders dahinter. '
   - Sie werden wohl hinter dem Artefakt her sein.
   - 'Doch woher wussten sie davon das es auf unserem Schiff transportiert wird? Es
