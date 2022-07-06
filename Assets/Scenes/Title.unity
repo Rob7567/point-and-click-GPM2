@@ -463,7 +463,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 67e205dd847939f42af46f172d912ae5, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -610,8 +610,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nova
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 058b5b02df217054d8ebcf3a7db565ed, type: 2}
-  m_sharedMaterial: {fileID: 8063917752046385999, guid: 058b5b02df217054d8ebcf3a7db565ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a9f70646483e3644fba867eba737f816, type: 2}
+  m_sharedMaterial: {fileID: -2155378098647739779, guid: a9f70646483e3644fba867eba737f816, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -755,7 +755,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 67e205dd847939f42af46f172d912ae5, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 39
     m_FontStyle: 0
     m_BestFit: 0
@@ -1051,8 +1051,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: And the escape from the Nightmare Raiders
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 058b5b02df217054d8ebcf3a7db565ed, type: 2}
-  m_sharedMaterial: {fileID: 8063917752046385999, guid: 058b5b02df217054d8ebcf3a7db565ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a9f70646483e3644fba867eba737f816, type: 2}
+  m_sharedMaterial: {fileID: -2155378098647739779, guid: a9f70646483e3644fba867eba737f816, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

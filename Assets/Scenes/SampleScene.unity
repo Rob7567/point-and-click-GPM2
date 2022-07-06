@@ -1387,7 +1387,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 326e07b68bd65d249a2309a062dda71a, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 14
     m_FontStyle: 1
     m_BestFit: 0
@@ -2413,7 +2413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &419458197
 Transform:
   m_ObjectHideFlags: 0
@@ -2900,7 +2900,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 326e07b68bd65d249a2309a062dda71a, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -4127,7 +4127,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 326e07b68bd65d249a2309a062dda71a, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -4410,9 +4410,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2075830927}
   lines:
-  - "Es scheint, dass die Leitung vor dem Aufzug besch\xE4digt wurde."
+  - Es scheint, dass die Leitung vor dem Aufzug beschaedigt wurde.
   - So kommst du nicht an den Aufzug ran.
-  - "Du musst eine L\xF6sung finden das Leck zu schlie\xDFen. "
+  - "Du musst eine Loesung finden das Leck zu schlie\xDFen. "
   textSpeed: 0.05
   move: {fileID: 34827109}
   kegel: {fileID: 603425806}
@@ -9539,7 +9539,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 326e07b68bd65d249a2309a062dda71a, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 4
     m_FontStyle: 0
     m_BestFit: 0
@@ -10267,8 +10267,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 058b5b02df217054d8ebcf3a7db565ed, type: 2}
-  m_sharedMaterial: {fileID: 8063917752046385999, guid: 058b5b02df217054d8ebcf3a7db565ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a9f70646483e3644fba867eba737f816, type: 2}
+  m_sharedMaterial: {fileID: -2155378098647739779, guid: a9f70646483e3644fba867eba737f816, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -505,7 +505,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 326e07b68bd65d249a2309a062dda71a, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 14
     m_FontStyle: 1
     m_BestFit: 0
@@ -1824,7 +1824,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 326e07b68bd65d249a2309a062dda71a, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -2982,7 +2982,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 058b5b02df217054d8ebcf3a7db565ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bfc2083a751676141bf5d30f97762385, type: 2}
   m_sharedMaterial: {fileID: 8063917752046385999, guid: 058b5b02df217054d8ebcf3a7db565ed, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3608,7 +3608,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 326e07b68bd65d249a2309a062dda71a, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 4
     m_FontStyle: 0
     m_BestFit: 0
@@ -3946,21 +3946,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 961867987}
   lines:
-  - "Kapit\xE4n! Wir haben ein gro\xDFes Problem. Wir wurden geentert. "
+  - 'Kapitaen! Wir haben ein grosses Problem. Wir wurden geentert. '
   - 'Vermutlich stecken die Nightmare Raiders dahinter. '
   - Sie werden wohl hinter dem Artefakt her sein.
   - 'Doch woher wussten sie davon das es auf unserem Schiff transportiert wird? Es
     muss wohl einen Maulwurf unter uns geben. '
-  - "Ich habe eine Verbindung zu unseren \xDCberwachungssystemen hergestellt. "
-  - "Von der Crew ist nicht mehr viel \xFCbrig. Sie sind schon bis zum  \xDCberwachungsraum
-    vorgedrungen."
-  - "Wenn Sie es hier auf die Br\xFCcke schaffen sind wir erledigt. Das Artefakt
-    sicher auf Zephus Prime zu bringen hat die h\xF6chste Priorit\xE4t. "
-  - "Der einzige Weg raus aus dieser H\xF6lle ist \xFCber die Rettungskapsel am anderem
-    Ende des Schiffes. "
-  - "Schnapp dir das Artefakt und schlag dir deinen Weg da durch. Ich bleibe hier
-    mit den \xDCberwachungssystemen verbunden und f\xFChre dich da durch. Denk dran,
-    diese Mission ist gr\xF6\xDFer als wir alle hier auf diesem Schiff.  "
+  - 'Ich habe eine Verbindung zu unseren Ueberwachungssystemen hergestellt. '
+  - Von der Crew ist nicht mehr viel uebrig. Sie sind schon bis zum  Ueberwachungsraum
+    vorgedrungen.
+  - 'Wenn Sie es hier auf die Bruecke schaffen sind wir erledigt. Das Artefakt sicher
+    auf Zephus Prime zu bringen hat die hoechste Prioritaet. '
+  - 'Der einzige Weg raus aus dieser Hoelle ist ueber die Rettungskapsel am anderem
+    Ende des Schiffes. '
+  - 'Schnapp dir das Artefakt und schlag dir deinen Weg da durch. Ich bleibe hier
+    mit den Ueberwachungssystemen verbunden und fuehre dich da durch. Denk dran,
+    diese Mission ist groesser als wir alle hier auf diesem Schiff.  '
   - Falls dir ein Gegner zu nahe kommen sollte, versteckst du dich am besten in einem
     Schrank.
   - "Probier es doch mal mit deinem Kleiderschrank. Dr\xFCcke daf\xFCr neben dem
@@ -5612,7 +5612,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 326e07b68bd65d249a2309a062dda71a, type: 3}
+    m_Font: {fileID: 12800000, guid: 7fbd91c4329a6124b9e2cea9552c280d, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
